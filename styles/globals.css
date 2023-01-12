@@ -1,3 +1,213 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Poppins", "Ubuntu", "Roboto", sans-serif;
+}
+
+:root {
+  --white-1: #ffffff;
+  --white-2: #eeeeee;
+  --white-3: #ecf1f4;
+  --black: #000000;
+  --dark: #0a0f16;
+  --subtleGreen: #90bcb7;
+  --darkGreen: #082d28;
+  --darkTosca: #569b9b;
+  --tosca-1: #00ffd1;
+  --tosca-2: #27d7d7;
+  --tosca-3: #3fe8ff;
+  --deepTosca-1: #016a6a;
+  --deepTosca-2: #02a6a6;
+  --grey-1: #888888;
+  --grey-2: #666666;
+}
+
+.content-3-7 .card-outline {
+  border: 1px solid #e5ebf9;
+}
+
+.content-3-7 .card {
+  transition: 0.4s;
+  top: 0px;
+
+  left: 0px;
+  position: relative;
+}
+
+.content-3-7 .card:hover {
+  top: -3px;
+  left: -3px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.content-3-7 .btn-outline {
+  border: 1px solid #2ec49c;
+  color: #2ec49c;
+}
+
+.content-3-7 .btn-outline:hover {
+  background-color: #2ec49c;
+  color: #ffffff;
+}
+
+.content-3-7 .btn-fill {
+  background-image: linear-gradient(
+    rgba(91, 203, 173, 1),
+    rgba(39, 194, 153, 1)
+  );
+}
+
+.content-3-7 .btn-fill:hover {
+  background-image: linear-gradient(#29b18d, #29b18d);
+}
+
+.content-3-7 .price-list-3-7 .no-check-3-7 {
+  color: #e1e1e1;
+}
+
+.content-3-7 .price-list-3-7 .check-3-7,
+.content-3-7 .text-medium-black {
+  color: #2e3a53;
+}
+
+.content-3-7 .bg-medium-black {
+  background-color: #2e3a53;
+}
+
+.content-3-7 .text-medium-white {
+  color: #c3c3c8;
+}
+
+.content-3-7 .caption {
+  color: #8e8fad;
+}
+
+.content-3-7 .price-title {
+  color: #141c2e;
+}
+
+.content-3-7 .price-month {
+  color: #9e9e9e;
+}
+
+.content-2-2 .btn-outline {
+  border: 1px solid #979797;
+  color: #979797;
+}
+
+.content-2-2 .btn-outline:hover {
+  border: 1px solid #27c499;
+  color: #27c499;
+}
+
+.content-2-2 .btn-fill {
+  background-color: #27c499;
+  border: 1px solid #27c499;
+}
+
+.content-2-2 .card-header {
+  background-color: #eef6f4;
+  border: 1px solid #27c499;
+}
+
+.content-2-2 .text-medium-black {
+  color: #121212;
+}
+
+.content-2-2 .text-gray {
+  color: #565656;
+}
+
+section.header-workly {
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    #114e4e 0%,
+    #052d2d 59.9%,
+    #041111 89.53%,
+    #000909 100%
+  );
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-white-1 {
+  color: var(--white-1);
+}
+
+.text-white-2 {
+  color: var(--white-2);
+}
+
+.text-darkGreen {
+  color: var(--darkGreen);
+}
+
+.text-subtleGreen {
+  color: var(--subtleGreen);
+}
+
+.bg-white-2 {
+  background-color: var(--white-2);
+}
+
+@media (min-width: 768px) {
+  .leading-px85 {
+    line-height: 85px;
+  }
+}
+
+.leading-px40 {
+  line-height: 40px;
+}
+
+.leading-px36 {
+  line-height: 36px;
+}
+
+.z-min100 {
+  z-index: -100;
+}
+
+.z-min10 {
+  z-index: -10;
+}
+
+.max-w-screen {
+  max-width: 1440px;
+}
+
+.max-w-px400 {
+  max-width: 400px;
+}
+
+.w-px580 {
+  width: 580px;
+}
+
+.h-780 {
+  height: 780px;
+}
