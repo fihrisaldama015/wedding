@@ -4,7 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700&display=swap");
-
 html {
   scroll-behavior: smooth;
 }
@@ -29,6 +28,23 @@ body {
   --deepTosca-2: #02a6a6;
   --grey-1: #888888;
   --grey-2: #666666;
+}
+
+.footer-2-3 .list-footer li a {
+  color: #707092;
+}
+.footer-2-3 .list-footer li a:hover {
+  color: #ffffff;
+}
+.footer-2-3 .border-color {
+  color: #707092;
+}
+.footer-2-3 .footer-link:hover {
+  color: #ffffff;
+}
+.footer-2-3 .social-media-c:hover circle,
+.footer-2-3 .social-media-p:hover path {
+  fill: #ffffff;
 }
 
 .content-3-7 .card-outline {

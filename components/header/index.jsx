@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Header = () => {
   const [isToggle, setIsToggle] = useState(false);
+  const [cta, setCta] = useState(false);
 
   const toggleMenu = () => {
     setIsToggle(!isToggle);
@@ -12,7 +13,7 @@ const Header = () => {
     <section className="bg-gradient-to-br from-blue-900 to-blue-700">
       <header className="pt-7">
         <nav className="z-10 px-8 mx-auto max-w-screen-2xl lg:px-24">
-          <div className="flex flex-col items-stretch lg:flex-row lg:items-center">
+          <div className="flex flex-col items-stretch md:flex-row lg:items-center">
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-amber-300 font-bold text-2xl">
@@ -21,7 +22,7 @@ const Header = () => {
               </div>
               <div>
                 <button
-                  className="block p-1 outline-none lg:hidden"
+                  className="block p-1 outline-none md:hidden"
                   onClick={() => toggleMenu()}
                 >
                   <svg
@@ -52,26 +53,26 @@ const Header = () => {
               </div>
             </div>
             <div
-              className={`${isToggle ? "block" : "hidden"} w-full lg:block`}
+              className={`${isToggle ? "block" : "hidden"} w-full md:block`}
               id="navigation"
             >
-              <div className="flex flex-col items-baseline justify-between mt-6 lg:flex-row lg:items-center lg:mt-0">
-                <div className="flex flex-col w-full ml-0 font-normal lg:flex-row text-white-1 lg:ml-44 lg:w-max">
+              <div className="flex flex-col items-baseline justify-between mt-6 md:flex-row md:items-center md:mt-0">
+                <div className="flex flex-col w-full ml-0 font-normal md:flex-row text-white-1 md:ml-44 md:w-max">
                   <a
                     href="#"
-                    className="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 hover:font-bold transition-all"
+                    className="py-3 mx-2 cursor-pointer lg:mx-4 lg:pl-0 hover:font-bold transition-all"
                   >
                     Home
                   </a>{" "}
                   <a
                     href="#Benefits"
-                    className="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 hover:font-bold transition-all"
+                    className="py-3 mx-2 cursor-pointer lg:mx-4 lg:pl-0 hover:font-bold transition-all"
                   >
                     Benefits
                   </a>{" "}
                   <a
                     href="#PriceList"
-                    className="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 hover:font-bold transition-all"
+                    className="py-3 mx-2 cursor-pointer lg:mx-4 lg:pl-0 hover:font-bold transition-all"
                   >
                     Price List
                   </a>{" "}
@@ -81,7 +82,7 @@ const Header = () => {
           </div>
         </nav>
         <div className="grid grid-rows-1 lg:grid-cols-3 lg:gap-4 gap-12 px-12 lg:px-24 sm:px-20 py-28 mx-auto max-w-screen-2xl">
-          <div className="lg:col-span-2 pr-16">
+          <div className="lg:col-span-2 md:pr-16">
             <div className="text-4xl font-semibold text-slate-50 md:text-6xl">
               <p className="drop-shadow-xl tracking-tight">
                 Buat Undangan Digitalmu dengan Cepat.
@@ -92,8 +93,19 @@ const Header = () => {
               Kekinian dan Responsive di Semua Perangkat.
             </div>
             <div>
-              <button className="mt-8 px-8 py-4 text-xl font-semibold rounded-2xl bg-white hover:bg-blue-900 text-blue-900 hover:text-white transition-all shadow-xl shadow-blue-600/75 hover:shadow-blue-800">
-                Pesan Sekarang
+              <button
+                className="flex items-strech gap-2 mt-8 px-8 py-4 text-xl font-semibold rounded-2xl bg-white hover:bg-blue-900 text-blue-900 hover:text-white transition-all shadow-xl shadow-blue-600/75 hover:shadow-blue-800"
+                onMouseEnter={() => setCta(true)}
+                onMouseLeave={() => setCta(false)}
+              >
+                <Image
+                  alt="icon"
+                  src={`${cta ? "/add-cart-active.svg" : "/add-cart.svg"}`}
+                  id="icon-cta"
+                  width={24}
+                  height={24}
+                />
+                <span>Pesan Sekarang</span>
               </button>
             </div>
           </div>

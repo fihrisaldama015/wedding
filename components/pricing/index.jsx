@@ -14,11 +14,11 @@ const Pricing = () => {
               Undangan Menjadi Lebih Modern & Unik
             </h2>
             <p className="lg:w-2/3 mx-auto tracking-wide text-base text-blue-900/75">
-              Tersedia Pilihan paket yang sesuai untuk Hari Spesial Anda anda
+              Tersedia Pilihan paket yang sesuai untuk Hari Spesialmu
             </p>
           </div>
           <div className="flex flex-wrap justify-center">
-            <div className="sm:p-4 px-0 py-4 lg:w-1/3 mx-auto card">
+            <div className="sm:px-4 px-0 py-12 lg:w-1/3">
               <div className="h-full py-8 px-11 rounded-2xl bg-white card-outline flex flex-col relative overflow-hidden">
                 <h2 className="text-lg tracking-wide mb-3 font-medium text-blue-800">
                   Standar
@@ -53,20 +53,20 @@ const Pricing = () => {
                   <p className="flex tracking-wide items-center text-sm mb-7 check-3-7">
                     <span className="w-4 h-4 mr-3 inline-flex items-center justify-center flex-shrink-0">
                       <img
-                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
-                        alt=""
-                      />{" "}
-                    </span>
-                    Sebar Undangan max. 1000
-                  </p>
-                  <p className="flex tracking-wide items-center text-sm mb-7 check-3-7">
-                    <span className="w-4 h-4 mr-3 inline-flex items-center justify-center flex-shrink-0">
-                      <img
-                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-3.png"
+                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
                         alt=""
                       />{" "}
                     </span>
                     30 Template Biasa
+                  </p>
+                  <p className="flex tracking-wide items-center text-sm mb-7 check-3-7">
+                    <span className="w-4 h-4 mr-3 inline-flex items-center justify-center flex-shrink-0">
+                      <img
+                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-4.png"
+                        alt=""
+                      />{" "}
+                    </span>
+                    Sebar Undangan max. 1000
                   </p>
                 </div>
                 <button className="ring-1 ring-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all font-medium rounded-lg flex justify-center items-center tracking-wide py-4 w-full focus:outline-none">
@@ -74,9 +74,9 @@ const Pricing = () => {
                 </button>
               </div>
             </div>
-            <div className="sm:p-4 px-0 py-4 lg:w-1/3 mx-auto card">
+            <div className="sm:px-4 px-0 py-4 lg:w-1/3">
               <div className="h-full py-8 px-11 rounded-2xl card-outline flex flex-col relative overflow-hidden bg-blue-900">
-                <h2 className="text-lg tracking-wide mb-3 font-medium text-transparent bg-clip-text bg-gradient-to-t from-amber-500 to-amber-100">
+                <h2 className="text-lg tracking-wide mb-3 font-medium text-transparent bg-clip-text bg-gradient-to-t from-amber-500 to-yellow-200">
                   Premium
                 </h2>
                 <h2 className="text-4xl tracking-wide flex items-center mb-3 font-semibold text-white">
@@ -105,6 +105,15 @@ const Pricing = () => {
                       />{" "}
                     </span>
                     Semua Fitur Undangan
+                  </p>
+                  <p className="flex tracking-wide items-center text-sm mb-7">
+                    <span className="w-4 h-4 mr-3 inline-flex items-center justify-center flex-shrink-0">
+                      <img
+                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-6.png"
+                        alt=""
+                      />{" "}
+                    </span>
+                    30 Template Biasa
                   </p>
                   <p className="flex tracking-wide items-center text-sm mb-7">
                     <span className="w-4 h-4 mr-3 inline-flex items-center justify-center flex-shrink-0">
